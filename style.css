@@ -1,0 +1,75 @@
+body {
+  background-color: #fff;
+  font-family: sans-serif;
+  font-size: 2rem;
+}
+
+h1, h2, h3, h4, h5 {
+  margin: 0px;
+  padding: 0px;
+}
+
+#mainContainer {
+  margin: 5vmin 10vmin 5vmin 10vmin;
+  background-color: #fff;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 2vmin;
+}
+
+.mainHeader {
+  display: grid;
+  margin: 0px;
+  padding: 0px;
+  height: 25vh;
+  grid-column-end: span 3;
+  background-color: #eee;
+  color: #000;
+  align-content: center;
+  text-align: center;
+}
+
+#navContainer {
+  grid-column-end: span 3;
+  text-align: center;
+  padding: 1vmin;
+}
+
+#navContainer span {
+  text-decoration: underline;
+  cursor: pointer;
+  padding: 1vmin;
+}
+
+.content-item {
+  padding: 1vmin;
+  color: #000;
+  transition: opacity 0.25s;
+}
+
+.content-music, #category-music {
+  background-color: pink;
+}
+
+.content-poem, #category-poem {
+  background-color: tan;
+}
+
+.content-video, #category-video {
+  background-color: beige;
+}
+
+.content-digital, #category-digital {
+  background-color: LightSkyBlue;
+}
+
+.brightContent, #navContainer span:hover {
+  opacity: 1.0;
+  -webkit-box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.1);
+  -moz-box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.1);
+  box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.1);
+}
+
+.dimContent {
+  opacity: 0.1;
+}
